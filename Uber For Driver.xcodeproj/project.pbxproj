@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1B766B98442646431318692 /* Pods_Uber_For_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F51835E9C892B774FA5183 /* Pods_Uber_For_Driver.framework */; };
 		EE7FC30E1E884822008DA02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC30D1E884822008DA02E /* AppDelegate.swift */; };
 		EE7FC3131E884822008DA02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3111E884822008DA02E /* Main.storyboard */; };
 		EE7FC3151E884822008DA02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3141E884822008DA02E /* Assets.xcassets */; };
 		EE7FC3181E884822008DA02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3161E884822008DA02E /* LaunchScreen.storyboard */; };
 		EE7FC3211E88484D008DA02E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FC3201E88484D008DA02E /* MapKit.framework */; };
 		EE7FC3261E884926008DA02E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC3251E884926008DA02E /* LoginVC.swift */; };
+		EE7FC3281E8861FB008DA02E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3271E8861FB008DA02E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D8B995DBEF2E5771FFE31A7 /* Pods-Uber For Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber For Driver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7FC30A1E884822008DA02E /* Uber For Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber For Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7FC30D1E884822008DA02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7FC3121E884822008DA02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		EE7FC3191E884822008DA02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7FC3201E88484D008DA02E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EE7FC3251E884926008DA02E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EE7FC3271E8861FB008DA02E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2F51835E9C892B774FA5183 /* Pods_Uber_For_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_For_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCB19C5C0F58618DCA5062F /* Pods-Uber For Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber For Driver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,18 +38,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7FC3211E88484D008DA02E /* MapKit.framework in Frameworks */,
+				D1B766B98442646431318692 /* Pods_Uber_For_Driver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1012EB6FD76DA2771582BE9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D8B995DBEF2E5771FFE31A7 /* Pods-Uber For Driver.debug.xcconfig */,
+				FDCB19C5C0F58618DCA5062F /* Pods-Uber For Driver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE7FC3011E884821008DA02E = {
 			isa = PBXGroup;
 			children = (
 				EE7FC30C1E884822008DA02E /* Uber For Driver */,
 				EE7FC30B1E884822008DA02E /* Products */,
 				EE7FC31F1E88484D008DA02E /* Frameworks */,
+				1012EB6FD76DA2771582BE9D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +83,7 @@
 				EE7FC3141E884822008DA02E /* Assets.xcassets */,
 				EE7FC3161E884822008DA02E /* LaunchScreen.storyboard */,
 				EE7FC3191E884822008DA02E /* Info.plist */,
+				EE7FC3271E8861FB008DA02E /* GoogleService-Info.plist */,
 			);
 			path = "Uber For Driver";
 			sourceTree = "<group>";
@@ -74,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7FC3201E88484D008DA02E /* MapKit.framework */,
+				F2F51835E9C892B774FA5183 /* Pods_Uber_For_Driver.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE7FC31C1E884822008DA02E /* Build configuration list for PBXNativeTarget "Uber For Driver" */;
 			buildPhases = (
+				1BFE1D793129326A9A1961AC /* [CP] Check Pods Manifest.lock */,
 				EE7FC3061E884822008DA02E /* Sources */,
 				EE7FC3071E884822008DA02E /* Frameworks */,
 				EE7FC3081E884822008DA02E /* Resources */,
+				E52F77F45D62A510CD06CC87 /* [CP] Embed Pods Frameworks */,
+				165BD6392A153F6174BCADFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,12 +188,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7FC3181E884822008DA02E /* LaunchScreen.storyboard in Resources */,
+				EE7FC3281E8861FB008DA02E /* GoogleService-Info.plist in Resources */,
 				EE7FC3151E884822008DA02E /* Assets.xcassets in Resources */,
 				EE7FC3131E884822008DA02E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		165BD6392A153F6174BCADFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BFE1D793129326A9A1961AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E52F77F45D62A510CD06CC87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE7FC3061E884822008DA02E /* Sources */ = {
@@ -300,6 +371,7 @@
 		};
 		EE7FC31D1E884822008DA02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B995DBEF2E5771FFE31A7 /* Pods-Uber For Driver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UER987Y3L2;
@@ -313,6 +385,7 @@
 		};
 		EE7FC31E1E884822008DA02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCB19C5C0F58618DCA5062F /* Pods-Uber For Driver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UER987Y3L2;
