@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EE7FC30E1E884822008DA02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC30D1E884822008DA02E /* AppDelegate.swift */; };
-		EE7FC3101E884822008DA02E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC30F1E884822008DA02E /* ViewController.swift */; };
 		EE7FC3131E884822008DA02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3111E884822008DA02E /* Main.storyboard */; };
 		EE7FC3151E884822008DA02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3141E884822008DA02E /* Assets.xcassets */; };
 		EE7FC3181E884822008DA02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3161E884822008DA02E /* LaunchScreen.storyboard */; };
+		EE7FC3211E88484D008DA02E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FC3201E88484D008DA02E /* MapKit.framework */; };
+		EE7FC3261E884926008DA02E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC3251E884926008DA02E /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE7FC30A1E884822008DA02E /* Uber For Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber For Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7FC30D1E884822008DA02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE7FC30F1E884822008DA02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE7FC3121E884822008DA02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE7FC3141E884822008DA02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7FC3171E884822008DA02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE7FC3191E884822008DA02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7FC3201E88484D008DA02E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EE7FC3251E884926008DA02E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7FC3211E88484D008DA02E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				EE7FC30C1E884822008DA02E /* Uber For Driver */,
 				EE7FC30B1E884822008DA02E /* Products */,
+				EE7FC31F1E88484D008DA02E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +58,46 @@
 		EE7FC30C1E884822008DA02E /* Uber For Driver */ = {
 			isa = PBXGroup;
 			children = (
+				EE7FC3231E88487C008DA02E /* Model */,
+				EE7FC3241E884881008DA02E /* Controller */,
+				EE7FC3221E88486E008DA02E /* View */,
 				EE7FC30D1E884822008DA02E /* AppDelegate.swift */,
-				EE7FC30F1E884822008DA02E /* ViewController.swift */,
 				EE7FC3111E884822008DA02E /* Main.storyboard */,
 				EE7FC3141E884822008DA02E /* Assets.xcassets */,
 				EE7FC3161E884822008DA02E /* LaunchScreen.storyboard */,
 				EE7FC3191E884822008DA02E /* Info.plist */,
 			);
 			path = "Uber For Driver";
+			sourceTree = "<group>";
+		};
+		EE7FC31F1E88484D008DA02E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FC3201E88484D008DA02E /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7FC3221E88486E008DA02E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EE7FC3231E88487C008DA02E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EE7FC3241E884881008DA02E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FC3251E884926008DA02E /* LoginVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +134,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UER987Y3L2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7FC3101E884822008DA02E /* ViewController.swift in Sources */,
+				EE7FC3261E884926008DA02E /* LoginVC.swift in Sources */,
 				EE7FC30E1E884822008DA02E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
