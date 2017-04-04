@@ -15,6 +15,11 @@
 		EE7FC3211E88484D008DA02E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FC3201E88484D008DA02E /* MapKit.framework */; };
 		EE7FC3261E884926008DA02E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FC3251E884926008DA02E /* LoginVC.swift */; };
 		EE7FC3281E8861FB008DA02E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE7FC3271E8861FB008DA02E /* GoogleService-Info.plist */; };
+		EE80938B1E89BC57004C2D0D /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80938A1E89BC57004C2D0D /* AuthProvider.swift */; };
+		EE93D5061E9023570021F062 /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D5051E9023570021F062 /* UberHandler.swift */; };
+		EEC64F7E1E8AE48A00F0DBEF /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC64F7D1E8AE48A00F0DBEF /* DriverVC.swift */; };
+		EEEDBCCD1E8EDC8C00CAA7DF /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDBCCC1E8EDC8C00CAA7DF /* DBProvider.swift */; };
+		EEEDBCCF1E8EDDFA00CAA7DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDBCCE1E8EDDFA00CAA7DF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		EE7FC3201E88484D008DA02E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EE7FC3251E884926008DA02E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EE7FC3271E8861FB008DA02E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE80938A1E89BC57004C2D0D /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		EE93D5051E9023570021F062 /* UberHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
+		EEC64F7D1E8AE48A00F0DBEF /* DriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		EEEDBCCC1E8EDC8C00CAA7DF /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		EEEDBCCE1E8EDDFA00CAA7DF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F2F51835E9C892B774FA5183 /* Pods_Uber_For_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_For_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDCB19C5C0F58618DCA5062F /* Pods-Uber For Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber For Driver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +85,7 @@
 		EE7FC30C1E884822008DA02E /* Uber For Driver */ = {
 			isa = PBXGroup;
 			children = (
+				EE8093891E89BBF5004C2D0D /* Plugin */,
 				EE7FC3231E88487C008DA02E /* Model */,
 				EE7FC3241E884881008DA02E /* Controller */,
 				EE7FC3221E88486E008DA02E /* View */,
@@ -115,8 +126,20 @@
 			isa = PBXGroup;
 			children = (
 				EE7FC3251E884926008DA02E /* LoginVC.swift */,
+				EEC64F7D1E8AE48A00F0DBEF /* DriverVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		EE8093891E89BBF5004C2D0D /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				EE80938A1E89BC57004C2D0D /* AuthProvider.swift */,
+				EEEDBCCC1E8EDC8C00CAA7DF /* DBProvider.swift */,
+				EEEDBCCE1E8EDDFA00CAA7DF /* Constants.swift */,
+				EE93D5051E9023570021F062 /* UberHandler.swift */,
+			);
+			name = Plugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +155,7 @@
 				EE7FC3081E884822008DA02E /* Resources */,
 				E52F77F45D62A510CD06CC87 /* [CP] Embed Pods Frameworks */,
 				165BD6392A153F6174BCADFD /* [CP] Copy Pods Resources */,
+				EE7FC32B1E8871F9008DA02E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +266,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber For Driver/Pods-Uber For Driver-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE7FC32B1E8871F9008DA02E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:767686356060:ios:9d2dc8286d8ba58d\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${PROJECT_DIR}/crashreport_keys.json\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,8 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC64F7E1E8AE48A00F0DBEF /* DriverVC.swift in Sources */,
+				EE80938B1E89BC57004C2D0D /* AuthProvider.swift in Sources */,
+				EEEDBCCD1E8EDC8C00CAA7DF /* DBProvider.swift in Sources */,
 				EE7FC3261E884926008DA02E /* LoginVC.swift in Sources */,
+				EE93D5061E9023570021F062 /* UberHandler.swift in Sources */,
 				EE7FC30E1E884822008DA02E /* AppDelegate.swift in Sources */,
+				EEEDBCCF1E8EDDFA00CAA7DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UER987Y3L2;
 				INFOPLIST_FILE = "Uber For Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lyger.Uber-For-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UER987Y3L2;
 				INFOPLIST_FILE = "Uber For Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lyger.Uber-For-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +460,7 @@
 				EE7FC31E1E884822008DA02E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

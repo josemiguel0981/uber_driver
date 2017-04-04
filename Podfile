@@ -7,4 +7,8 @@ target 'Uber For Driver' do
 
   # Pods for Uber For Driver
 	pod 'Firebase/Core'
+    pod 'Firebase/Crash'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
 end
